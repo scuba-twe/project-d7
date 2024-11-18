@@ -91,8 +91,8 @@ public class HandcraftUsageEvent {
         if (!world.isClient()) {
             if (main.isIn(TagKey.of(RegistryKeys.ITEM,
                     Identifier.of(Projectd7.MOD_ID, "mortar_pestles")))
-                    && main.contains(ModDataComponentTypes.TOOL_STORAGE)) {
-                InsideItemStorageComponent insideItemStorageComponent = main.get(ModDataComponentTypes.TOOL_STORAGE);
+                    && main.contains(ModDataComponentTypes.INSIDE_ITEM_STORAGE)) {
+                InsideItemStorageComponent insideItemStorageComponent = main.get(ModDataComponentTypes.INSIDE_ITEM_STORAGE);
                 if (insideItemStorageComponent == null || insideItemStorageComponent.getStacks().isEmpty()) {
                     return ItemStack.EMPTY;
                 } else {
@@ -101,7 +101,7 @@ public class HandcraftUsageEvent {
                         InsideItemStorageComponent.Builder builder = new InsideItemStorageComponent.Builder(insideItemStorageComponent);
                         input = HandcraftingRecipeInput.create(insideItemStorageComponent.getStacks(), off);
                         if (!matchingRecipes.isEmpty()) {
-                            main.set(ModDataComponentTypes.TOOL_STORAGE, builder.clear().build());
+                            main.set(ModDataComponentTypes.INSIDE_ITEM_STORAGE, builder.clear().build());
                         }
                     }
                 }

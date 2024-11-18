@@ -12,7 +12,7 @@ public class ModDataComponentTypes {
 
     /* Inside Item Storage */
     public static final ComponentType<InsideItemStorageComponent>
-            TOOL_STORAGE = register("inside_item_storage", (builder) ->
+            INSIDE_ITEM_STORAGE = register("inside_item_storage", (builder) ->
             builder.codec(InsideItemStorageComponent.CODEC)
                     .packetCodec(InsideItemStorageComponent.PACKET_CODEC).cache());
 

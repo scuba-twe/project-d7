@@ -188,7 +188,7 @@ public class ModItems {
     /* Mortar & Pestle */
     public static final Item WOODEN_MORTAR_PESTLE = registerItem("wooden_mortar_pestle", (settings) ->
             new MortarPestleItem(settings
-                    .component(ModDataComponentTypes.TOOL_STORAGE, InsideItemStorageComponent.DEFAULT)
+                    .component(ModDataComponentTypes.INSIDE_ITEM_STORAGE, InsideItemStorageComponent.DEFAULT)
                     .maxCount(1)));
 
     /*                  */

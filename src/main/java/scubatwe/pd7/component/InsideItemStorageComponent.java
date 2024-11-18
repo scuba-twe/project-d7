@@ -58,7 +58,7 @@ public final class InsideItemStorageComponent implements TooltipData {
     }
 
     static Fraction getPlace(ItemStack stack) {
-        InsideItemStorageComponent toolStorage = stack.get(ModDataComponentTypes.TOOL_STORAGE);
+        InsideItemStorageComponent toolStorage = stack.get(ModDataComponentTypes.INSIDE_ITEM_STORAGE);
         if (toolStorage != null) {
             return NEST_PLACE.add(toolStorage.getPlace());
         } else {

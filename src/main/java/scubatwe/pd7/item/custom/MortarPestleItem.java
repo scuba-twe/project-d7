@@ -30,11 +30,11 @@ public class MortarPestleItem extends Item {
     }
 
     public static void setIndex(ItemStack stack, int index) {
-        InsideItemStorageComponent toolStorage = (stack.get(ModDataComponentTypes.TOOL_STORAGE));
+        InsideItemStorageComponent toolStorage = (stack.get(ModDataComponentTypes.INSIDE_ITEM_STORAGE));
         if (toolStorage != null) {
             InsideItemStorageComponent.Builder builder = new InsideItemStorageComponent.Builder(toolStorage);
             builder.setIndex(index);
-            stack.set(ModDataComponentTypes.TOOL_STORAGE, builder.build());
+            stack.set(ModDataComponentTypes.INSIDE_ITEM_STORAGE, builder.build());
         }
     }
     
@@ -53,7 +53,7 @@ public class MortarPestleItem extends Item {
             setIndex(stack, -1);
             return false;
         } else {
-            InsideItemStorageComponent insideItemStorageComponent = stack.get(ModDataComponentTypes.TOOL_STORAGE);
+            InsideItemStorageComponent insideItemStorageComponent = stack.get(ModDataComponentTypes.INSIDE_ITEM_STORAGE);
             if(insideItemStorageComponent == null) {
                 return false;
             } else {
@@ -61,7 +61,7 @@ public class MortarPestleItem extends Item {
                 if (clickType == ClickType.LEFT && !otherStack.isEmpty() && otherStack.isIn
                         (TagKey.of(RegistryKeys.ITEM, Identifier.of(Projectd7.MOD_ID, "pressables")))
                         && slot.canTakePartial(player) && builder.add(otherStack.split(1)) > 0) {
-                    stack.set(ModDataComponentTypes.TOOL_STORAGE, builder.build());
+                    stack.set(ModDataComponentTypes.INSIDE_ITEM_STORAGE, builder.build());
                     this.onContentChanged(player);
                     return true;
                 } else if (clickType == ClickType.RIGHT && otherStack.isEmpty()
@@ -72,7 +72,7 @@ public class MortarPestleItem extends Item {
                             cursorStackReference.set(itemStack);
                         }
                     }
-                    stack.set(ModDataComponentTypes.TOOL_STORAGE, builder.build());
+                    stack.set(ModDataComponentTypes.INSIDE_ITEM_STORAGE, builder.build());
                     this.onContentChanged(player);
                     return true;
                 } else {
@@ -92,9 +92,9 @@ public class MortarPestleItem extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
-        if (stack.contains(ModDataComponentTypes.TOOL_STORAGE)) {
+        if (stack.contains(ModDataComponentTypes.INSIDE_ITEM_STORAGE)) {
             if(Screen.hasShiftDown()) {
-                InsideItemStorageComponent insideItemStorageComponent = stack.get(ModDataComponentTypes.TOOL_STORAGE);
+                InsideItemStorageComponent insideItemStorageComponent = stack.get(ModDataComponentTypes.INSIDE_ITEM_STORAGE);
                 tooltip.add(Text.translatable("tooltip.pd7.mortar_pestle.shift_down"));
                 if(insideItemStorageComponent != null) {
                     tooltip.add(Text.literal("Inside:  "));
