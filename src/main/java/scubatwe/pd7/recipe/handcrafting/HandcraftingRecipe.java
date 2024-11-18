@@ -56,7 +56,7 @@ public class HandcraftingRecipe implements ModRecipe<HandcraftingRecipeInput> {
     }
 
     public RecipeBookCategory getRecipeBookCategory() {
-        return ModRecipeBookCategory.HANDCRAFT_CRAFTING;
+        return ModRecipeBookCategory.HANDCRAFTING;
     }
 
     public String getGroup() {

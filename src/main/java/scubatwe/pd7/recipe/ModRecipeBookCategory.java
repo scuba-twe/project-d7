@@ -7,7 +7,7 @@ import net.minecraft.util.Identifier;
 import scubatwe.pd7.Projectd7;
 
 public class ModRecipeBookCategory {
-    public static final RecipeBookCategory HANDCRAFT_CRAFTING = register("handcraft_crafting");
+    public static final RecipeBookCategory HANDCRAFTING = register("handcrafting");
 
     private static RecipeBookCategory register(String name) {
         return Registry.register(Registries.RECIPE_BOOK_CATEGORY, Identifier.of(Projectd7.MOD_ID, name),
