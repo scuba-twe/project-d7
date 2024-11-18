@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 // FIX PACKET ISSUE
-public class HandcraftingRecipe implements Recipe<HandcraftingRecipeInput> {
+public class HandcraftingRecipe implements ModRecipe<HandcraftingRecipeInput> {
     final String group;
     final List<Ingredient> ingredients;
     final List<ItemStack> byproducts;
