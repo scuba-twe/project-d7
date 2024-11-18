@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "pd7:shaved_stick",
+    "pd7:wooden_mallet_head"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pd7:wooden_mallet"
+  }
+}

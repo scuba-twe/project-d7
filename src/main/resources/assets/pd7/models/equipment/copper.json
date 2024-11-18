@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "pd7:copper"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "pd7:copper"
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:string",
+    "F": "pd7:sharpened_flint",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "FF",
+    "S#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pd7:flint_saw"
+  }
+}

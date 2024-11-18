@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "pd7:wooden_mortar",
+    "pd7:wooden_pestle"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pd7:wooden_mortar_pestle"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "pd7:handcrafting",
+  "byproduct": [],
+  "group": "mortar_pestles",
+  "ingredient": [
+    "pd7:flax_seeds",
+    "pd7:flax_seeds",
+    "pd7:flax_seeds",
+    "pd7:flax_seeds",
+    "#pd7:mortar_pestle_containers"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pd7:linseed_oil"
+  }
+}

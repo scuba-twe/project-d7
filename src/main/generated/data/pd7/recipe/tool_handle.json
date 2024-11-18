@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "pd7:shaved_stick",
+    "L": "minecraft:leather",
+    "O": "pd7:linseed_oil",
+    "S": "pd7:sandpaper"
+  },
+  "pattern": [
+    "OS",
+    "#L"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pd7:tool_handle"
+  }
+}

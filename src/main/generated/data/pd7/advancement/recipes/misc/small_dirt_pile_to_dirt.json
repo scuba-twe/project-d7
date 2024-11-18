@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dirt": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:dirt"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_small_dirt_pile": {
+      "conditions": {
+        "items": [
+          {
+            "items": "pd7:small_dirt_pile"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:small_dirt_pile_to_dirt"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_small_dirt_pile",
+      "has_dirt"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:small_dirt_pile_to_dirt"
+    ]
+  }
+}

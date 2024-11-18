@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:flower",
+  "config": {
+    "feature": "pd7:flax_plant_placed",
+    "tries": 64,
+    "xz_spread": 10,
+    "y_spread": 4
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "pd7:byproduct",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "pd7:tiny_stone",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pd7:tiny_dirt_pile",
+          "weight": 45
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minecraft:byproduct/dirt_type_result"
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_shaved_stick": {
+      "conditions": {
+        "items": [
+          {
+            "items": "pd7:shaved_stick"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:shaved_stick_and_head_to_wooden_mallet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_shaved_stick"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:shaved_stick_and_head_to_wooden_mallet"
+    ]
+  }
+}

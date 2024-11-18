@@ -1,0 +1,18 @@
+{
+  "type": "pd7:handcrafting",
+  "byproduct": [
+    {
+      "count": 2,
+      "id": "pd7:wood_scraps"
+    }
+  ],
+  "group": "saws",
+  "ingredient": [
+    "pd7:oak_wood_chunk",
+    "#pd7:saws"
+  ],
+  "result": {
+    "count": 4,
+    "id": "pd7:oak_wood_plank"
+  }
+}

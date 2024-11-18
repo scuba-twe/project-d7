@@ -1,0 +1,18 @@
+{
+  "type": "pd7:handcrafting",
+  "byproduct": [
+    {
+      "count": 2,
+      "id": "pd7:flax_seeds"
+    }
+  ],
+  "group": "knives",
+  "ingredient": [
+    "pd7:flax_bundle",
+    "#pd7:knives"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pd7:flax_stalks"
+  }
+}

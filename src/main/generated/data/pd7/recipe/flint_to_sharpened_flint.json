@@ -1,0 +1,13 @@
+{
+  "type": "pd7:handcrafting",
+  "byproduct": [],
+  "group": "handcraftables",
+  "ingredient": [
+    "minecraft:flint",
+    "pd7:small_stone"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pd7:sharpened_flint"
+  }
+}

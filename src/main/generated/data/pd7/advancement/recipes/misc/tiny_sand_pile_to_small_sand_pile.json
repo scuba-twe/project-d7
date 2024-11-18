@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_small_sand_pile": {
+      "conditions": {
+        "items": [
+          {
+            "items": "pd7:small_sand_pile"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:tiny_sand_pile_to_small_sand_pile"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_tiny_sand_pile": {
+      "conditions": {
+        "items": [
+          {
+            "items": "pd7:tiny_sand_pile"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_tiny_sand_pile",
+      "has_small_sand_pile"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:tiny_sand_pile_to_small_sand_pile"
+    ]
+  }
+}

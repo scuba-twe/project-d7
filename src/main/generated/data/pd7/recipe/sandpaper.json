@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": "pd7:senegal_gum",
+    "P": "minecraft:paper",
+    "S": "pd7:small_sand_pile"
+  },
+  "pattern": [
+    "SP",
+    "GS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pd7:sandpaper"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "item.pd7.copper_boots": "Copper Boots",
+  "item.pd7.copper_leggings": "Copper Leggings",
+  "item.pd7.copper_chestplate": "Copper Chestplate",
+  "item.pd7.copper_helmet": "Copper Helmet",
+
+  "block.pd7.flax_plant": "Flax Plant",
+  "block.pd7.dim_data_block": "Compressed Dimensional Data",
+  "block.pd7.dim_data_ore": "Dimensional Data Deposit",
+  "block.pd7.dim_data_detector": "Data Detector",
+
+  "block.pd7.dim_data_altar": "Data Altar",
+  "tooltip.pd7.dim_data_altar": "Press §eSHIFT§r for information ...",
+  "tooltip.pd7.dim_data_altar.shift_down": "This doesn't do much §9yet§r ...",
+
+  "item.pd7.clay_bowl": "Clay Bowl",
+  "item.pd7.dim_data": "Dimensional Data",
+  "item.pd7.linseed_oil": "Linseed Oil",
+  "item.pd7.sandpaper": "Sandpaper",
+  "item.pd7.senegal_gum": "Senegal Gum",
+  "item.pd7.sharpened_flint": "Sharpened Flint",
+  "item.pd7.small_stick": "Small Stick",
+  "item.pd7.shaved_stick": "Shaved Stick",
+  "item.pd7.small_shaved_stick": "Small Shaved Stick",
+  "item.pd7.small_stone": "Small Stone",
+  "item.pd7.small_dirt_pile": "Small Dirt Pile",
+  "item.pd7.small_sand_pile": "Small Sand Pile",
+  "item.pd7.tiny_stone": "Tiny Stone",
+  "item.pd7.tiny_dirt_pile": "Tiny Dirt Pile",
+  "item.pd7.tiny_sand_pile": "Tiny Sand Pile",
+  "item.pd7.wood_scraps": "Wood Scraps",
+  "item.pd7.acacia_wood_chunk": "Acacia Wood Chunk",
+  "item.pd7.acacia_wood_chunk_gummed": "Gummed Acacia Wood Chunk",
+  "item.pd7.oak_wood_chunk": "Oak Wood Chunk",
+  "item.pd7.oak_wood_plank": "Oak Wood Plank",
+
+  "item.pd7.flax_flower": "Flax Flower",
+  "item.pd7.flax_seeds": "Flax Seeds",
+  "item.pd7.flax_bundle": "Bundle of Flax",
+  "item.pd7.flax_stalks": "Flax Stalks",
+
+  "item.pd7.copper_axe": "Copper Axe",
+  "item.pd7.copper_hammer": "Copper Hammer",
+  "item.pd7.copper_hoe": "Copper Hoe",
+  "item.pd7.copper_knife": "Copper Knife",
+  "item.pd7.copper_pickaxe": "Copper Pickaxe",
+  "item.pd7.copper_shovel": "Copper Shovel",
+  "item.pd7.copper_sword": "Copper Broadsword",
+
+  "item.pd7.flint_knife": "Flint Knife",
+  "item.pd7.flint_pickaxe": "Flint Pickaxe",
+  "item.pd7.flint_saw": "Flint Saw",
+
+  "item.pd7.wooden_mallet": "Wooden Mallet",
+  "item.pd7.wooden_mortar_pestle": "Wooden Mortar & Pestle",
+  "tooltip.pd7.mortar_pestle": "Press §eSHIFT§r for information ...",
+  "tooltip.pd7.mortar_pestle.shift_down": "This doesn't do much §9yet§r ...",
+
+  "item.pd7.tool_handle": "Tool Handle",
+  "item.pd7.wooden_mortar": "Wooden Mortar",
+  "item.pd7.wooden_pestle": "Wooden Pestle",
+  "item.pd7.wooden_mallet_head": "Wooden Mallet Head",
+
+  "item.pd7.fish_filet": "Fish Filet",
+
+  "item.pd7.dim_data_swapper": "Data Swapper",
+  "tooltip.pd7.dim_data_swapper": "Press §eSHIFT§r for information ...",
+  "tooltip.pd7.dim_data_swapper.shift_down": "This doesn't do much §9yet§r ...",
+
+  "itemgroup.pd7.pd7_blocks": "PD7 Blocks",
+  "itemgroup.pd7.pd7_items": "PD7 Items",
+
+  "effect.pd7.copper_set_bonus": "Armor Set Bonus"
+}

@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "pd7",
+	"version": "${version}",
+	"name": "project-d7",
+	"description": "Project Dim7 by scubatwe.",
+	"authors": [
+		"scubatwe"
+	],
+	"contact": {
+		"homepage": "https://github.com/scuba-twe/project-d7"
+	},
+	"license": "MIT",
+	"icon": "assets/pd7/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"scubatwe.pd7.Projectd7"
+		],
+		"fabric-datagen": [
+			"scubatwe.pd7.Projectd7DataGenerator"
+		],
+		"client": [
+			"scubatwe.pd7.Projectd7Client"
+		]
+	},
+	"mixins": [
+		"pd7.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-key-binding-api-v1": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

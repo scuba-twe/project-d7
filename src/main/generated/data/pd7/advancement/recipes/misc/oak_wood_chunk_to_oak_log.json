@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_oak_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:oak_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_oak_wood_chunk": {
+      "conditions": {
+        "items": [
+          {
+            "items": "pd7:oak_wood_chunk"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:oak_wood_chunk_to_oak_log"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_oak_wood_chunk",
+      "has_oak_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:oak_wood_chunk_to_oak_log"
+    ]
+  }
+}

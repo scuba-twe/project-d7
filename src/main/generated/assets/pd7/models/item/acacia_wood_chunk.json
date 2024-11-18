@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pd7:item/acacia_wood_chunk"
+  }
+}

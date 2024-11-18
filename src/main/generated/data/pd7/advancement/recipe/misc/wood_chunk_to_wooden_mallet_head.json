@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_acacia_wood_chunk": {
+      "conditions": {
+        "items": [
+          {
+            "items": "pd7:acacia_wood_chunk"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_oak_wood_chunk": {
+      "conditions": {
+        "items": [
+          {
+            "items": "pd7:oak_wood_chunk"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "pd7:wood_chunk_to_wooden_mallet_head"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_oak_wood_chunk",
+      "has_acacia_wood_chunk"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pd7:wood_chunk_to_wooden_mallet_head"
+    ]
+  }
+}
