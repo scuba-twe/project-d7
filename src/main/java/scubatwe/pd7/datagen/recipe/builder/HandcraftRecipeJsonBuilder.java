@@ -78,8 +78,8 @@ public class HandcraftRecipeJsonBuilder {
         return this;
     }
 
-    public HandcraftRecipeJsonBuilder byproduct(ItemConvertible item, int count) {
-        this.byproducts.add(item.asItem().getDefaultStack().copyWithCount(count));
+    public HandcraftRecipeJsonBuilder byproduct(ItemConvertible item, int amount) {
+        this.byproducts.add(item.asItem().getDefaultStack().copyWithCount(amount));
         return this;
     }
 

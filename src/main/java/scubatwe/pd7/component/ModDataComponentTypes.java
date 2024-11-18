@@ -4,14 +4,13 @@ import net.minecraft.component.ComponentType;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.math.BlockPos;
 import scubatwe.pd7.Projectd7;
 
 import java.util.function.UnaryOperator;
 
 public class ModDataComponentTypes {
 
-    /* Tool Item Storage */
+    /* Inside Item Storage */
     public static final ComponentType<InsideItemStorageComponent>
             TOOL_STORAGE = register("inside_item_storage", (builder) ->
             builder.codec(InsideItemStorageComponent.CODEC)
@@ -27,7 +26,7 @@ public class ModDataComponentTypes {
                 builderOperator.apply(ComponentType.builder()).build());
     }
 
-    public static void registerDataComponentTypes() {
+    public static void registerModDataComponentTypes() {
         Projectd7.LOGGER.info("Registering data for " + Projectd7.MOD_ID);
     }
 }

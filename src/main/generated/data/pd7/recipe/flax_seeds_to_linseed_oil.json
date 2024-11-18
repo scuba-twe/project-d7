@@ -1,8 +1,8 @@
 {
   "type": "pd7:handcrafting",
-  "byproduct": [],
+  "byproducts": [],
   "group": "mortar_pestles",
-  "ingredient": [
+  "ingredients": [
     "pd7:flax_seeds",
     "pd7:flax_seeds",
     "pd7:flax_seeds",

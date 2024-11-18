@@ -127,7 +127,6 @@ public class HandcraftUsageEvent {
             if (optional.isPresent()) {
                 RecipeEntry<HandcraftingRecipe> entry = optional.get();
                 HandcraftingRecipe recipe = entry.value();
-                //this.matchingRecipes.clear();
                 this.byproducts.addAll(recipe.byproduce(input, world.getRegistryManager()));
                 player.sendMessage(Text.literal("Byproducts: " + this.byproducts), false);
                 return recipe.craft(input, world.getRegistryManager());

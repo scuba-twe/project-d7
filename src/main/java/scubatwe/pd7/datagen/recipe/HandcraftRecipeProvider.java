@@ -53,7 +53,7 @@ public class HandcraftRecipeProvider extends FabricRecipeProvider {
                 /* Flax Bundle -> Flax Stalks */
                 this.createHandcraftRecipe(RecipeCategory.MISC, ModItems.FLAX_STALKS, 1)
                         .group("knives")
-                        .input(ModItems.FLAX_BUNDLE, 1)
+                        .input(ModItems.FLAX_BUNDLE)
                         .input(TagKey.of(RegistryKeys.ITEM,
                                 Identifier.of(Projectd7.MOD_ID, "knives")))
                         .byproduct(ModItems.FLAX_SEEDS, 2)

@@ -160,7 +160,7 @@ public class ModItemGroups {
     //      Helper      //
     /*                  */
 
-    public static void registerItemGroups() {
+    public static void registerModItemGroups() {
         Projectd7.LOGGER.info("Registering item groups for " + Projectd7.MOD_ID);
     }
 }

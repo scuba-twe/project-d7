@@ -1,8 +1,8 @@
 {
   "type": "pd7:handcrafting",
-  "byproduct": [],
+  "byproducts": [],
   "group": "handcraftables",
-  "ingredient": [
+  "ingredients": [
     "minecraft:flint",
     "pd7:small_stone"
   ],

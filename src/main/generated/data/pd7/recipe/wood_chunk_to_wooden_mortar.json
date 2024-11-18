@@ -1,13 +1,13 @@
 {
   "type": "pd7:handcrafting",
-  "byproduct": [
+  "byproducts": [
     {
       "count": 2,
       "id": "pd7:wood_scraps"
     }
   ],
   "group": "knives",
-  "ingredient": [
+  "ingredients": [
     "#pd7:wood_chunks",
     "#pd7:knives"
   ],

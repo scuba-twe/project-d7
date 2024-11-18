@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 // FIX PACKET ISSUE
-public class HandcraftingRecipe implements ModRecipe<HandcraftingRecipeInput> {
+public class HandcraftingRecipe implements Recipe<HandcraftingRecipeInput> {
     final String group;
     final List<Ingredient> ingredients;
     final List<ItemStack> byproducts;
@@ -92,9 +92,9 @@ public class HandcraftingRecipe implements ModRecipe<HandcraftingRecipeInput> {
                     instance -> instance.group(
                             Codec.STRING.optionalFieldOf("group", "")
                                     .forGetter((recipe) -> recipe.group),
-                            Ingredient.CODEC.listOf(1, 9).fieldOf("ingredient")
+                            Ingredient.CODEC.listOf(1, 9).fieldOf("ingredients")
                                     .forGetter((recipe) -> recipe.ingredients),
-                            ItemStack.CODEC.listOf(0, 16).fieldOf("byproduct")
+                            ItemStack.VALIDATED_CODEC.listOf(0, 16).fieldOf("byproducts")
                                     .forGetter((recipe) -> recipe.byproducts),
                             ItemStack.VALIDATED_CODEC.fieldOf("result")
                                     .forGetter((recipe) -> recipe.result)

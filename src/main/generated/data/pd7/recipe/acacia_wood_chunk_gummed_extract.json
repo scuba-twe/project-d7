@@ -1,13 +1,13 @@
 {
   "type": "pd7:handcrafting",
-  "byproduct": [
+  "byproducts": [
     {
       "count": 1,
       "id": "pd7:acacia_wood_chunk"
     }
   ],
   "group": "knives",
-  "ingredient": [
+  "ingredients": [
     "pd7:acacia_wood_chunk_gummed",
     "#pd7:knives"
   ],

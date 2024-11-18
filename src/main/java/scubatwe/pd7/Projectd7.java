@@ -1,14 +1,6 @@
 package scubatwe.pd7;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
-import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.entity.passive.SheepEntity;
-import net.minecraft.item.Items;
-import net.minecraft.text.Text;
-import net.minecraft.util.ActionResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import scubatwe.pd7.block.ModBlocks;
@@ -30,11 +22,11 @@ public class Projectd7 implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
-		ModItemGroups.registerItemGroups();
+		ModItemGroups.registerModItemGroups();
 
 		ModEffects.registerEffects();
 
-		ModDataComponentTypes.registerDataComponentTypes();
+		ModDataComponentTypes.registerModDataComponentTypes();
 
 		ModRecipeType.registerModRecipeTypes();
 		ModRecipeSerializer.registerModRecipeSerializer();
