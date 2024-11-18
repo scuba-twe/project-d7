@@ -26,6 +26,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     protected RecipeGenerator getRecipeGenerator(RegistryWrapper.WrapperLookup wrapperLookup,
                                                  RecipeExporter recipeExporter) {
         return new RecipeGenerator(wrapperLookup, recipeExporter) {
+
             @Override
             public void generate() {
 

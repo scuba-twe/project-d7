@@ -16,14 +16,12 @@ public class HandcraftingRecipeInput implements RecipeInput {
     private HandcraftingRecipeInput(List<ItemStack> stacks) {
         this.stacks = stacks;
         int i = 0;
-
         for (ItemStack itemStack : stacks) {
             if (!itemStack.isEmpty()) {
                 ++i;
                 this.matcher.addInput(itemStack, 1);
             }
         }
-
         this.count = i;
     }
 
@@ -54,7 +52,6 @@ public class HandcraftingRecipeInput implements RecipeInput {
                 list.add(s.copyWithCount(1));
             }
         }
-
         list.addLast(stack);
         return list;
     }

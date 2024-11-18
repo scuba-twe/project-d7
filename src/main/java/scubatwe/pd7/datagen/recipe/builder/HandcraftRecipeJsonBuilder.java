@@ -54,7 +54,6 @@ public class HandcraftRecipeJsonBuilder {
         for(int i = 0; i < amount; ++i) {
             this.input(Ingredient.ofItem(item));
         }
-
         return this;
     }
 

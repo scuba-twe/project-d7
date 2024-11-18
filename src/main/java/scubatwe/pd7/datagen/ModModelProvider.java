@@ -94,7 +94,6 @@ public class ModModelProvider extends FabricModelProvider {
         /*                  */
 
         itemModelGenerator.register(ModItems.DIM_DATA, Models.GENERATED);
-        // itemModelGenerator.register(ModItems.DIM_DATA_SWAPPER, Models.GENERATED);
         itemModelGenerator.register(ModItems.LINSEED_OIL, Models.GENERATED);
         itemModelGenerator.register(ModItems.SANDPAPER, Models.GENERATED);
         itemModelGenerator.register(ModItems.SENEGAL_GUM, Models.GENERATED);

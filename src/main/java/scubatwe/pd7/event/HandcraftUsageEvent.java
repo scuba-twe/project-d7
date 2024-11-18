@@ -100,7 +100,9 @@ public class HandcraftUsageEvent {
                             Identifier.of(Projectd7.MOD_ID, "mortar_pestle_containers")))) {
                         InsideItemStorageComponent.Builder builder = new InsideItemStorageComponent.Builder(insideItemStorageComponent);
                         input = HandcraftingRecipeInput.create(insideItemStorageComponent.getStacks(), off);
-                        main.set(ModDataComponentTypes.TOOL_STORAGE, builder.clear().build());
+                        if (!matchingRecipes.isEmpty()) {
+                            main.set(ModDataComponentTypes.TOOL_STORAGE, builder.clear().build());
+                        }
                     }
                 }
             } else input = HandcraftingRecipeInput.create(off, main);
@@ -154,7 +156,7 @@ public class HandcraftUsageEvent {
                             Identifier.of(Projectd7.MOD_ID, "byproduct/" + tag.id().getPath() + "_result")));
         }
         if (lootTable != null) { return lootTable.generateLoot(lootWorldContext); }
-        else { return List.of(); }
+        else return List.of();
     }
 }
 

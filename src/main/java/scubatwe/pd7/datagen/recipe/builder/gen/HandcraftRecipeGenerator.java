@@ -15,7 +15,6 @@ public abstract class HandcraftRecipeGenerator extends RecipeGenerator {
 
     protected HandcraftRecipeGenerator(RegistryWrapper.WrapperLookup registries, RecipeExporter exporter) {
         super(registries, exporter);
-
         this.itemLookup = registries.getOrThrow(RegistryKeys.ITEM);
     }
 
