@@ -31,7 +31,7 @@ import java.util.Optional;
 
 public class HandcraftUsageEvent {
     private final List<RecipeEntry<HandcraftingRecipe>> matchingRecipes = new ArrayList<>();
-    private final List<ItemStack> byproducts = new ArrayList<>();
+    private List<ItemStack> byproducts = new ArrayList<>();
     private RecipeEntry<HandcraftingRecipe> currentRecipe = null;
     private RegistryEntry<Item> saved = null;
     private int index = 0;
@@ -48,6 +48,7 @@ public class HandcraftUsageEvent {
                     off.decrement(1);
                     if (!off.isEmpty()) { player.giveOrDropStack(recipe); }
                     else player.setStackInHand(Hand.valueOf("OFF_HAND"), recipe);
+                    player.sendMessage(Text.literal("Byproducts: " + this.byproducts), false);
                     if (!byproducts.isEmpty()) {
                         for (ItemStack byproduct : byproducts) { player.giveOrDropStack(byproduct); }
                     }
@@ -129,8 +130,7 @@ public class HandcraftUsageEvent {
             if (optional.isPresent()) {
                 RecipeEntry<HandcraftingRecipe> entry = optional.get();
                 HandcraftingRecipe recipe = entry.value();
-                this.byproducts.addAll(recipe.byproduce(input, world.getRegistryManager()));
-                player.sendMessage(Text.literal("Byproducts: " + this.byproducts), false);
+                this.byproducts = recipe.byproduce(input, world.getRegistryManager());
                 return recipe.craft(input, world.getRegistryManager());
             } else return ItemStack.EMPTY;
         } else return ItemStack.EMPTY;

@@ -1,6 +1,8 @@
 package scubatwe.pd7.recipe;
 
-import net.minecraft.recipe.Recipe;
+import com.mojang.serialization.MapCodec;
+import net.minecraft.network.RegistryByteBuf;
+import net.minecraft.network.codec.PacketCodec;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -12,7 +14,7 @@ public class ModRecipeSerializer {
     public static final RecipeSerializer<HandcraftingRecipe> HANDCRAFTING = register("handcrafting",
             new HandcraftingRecipe.Serializer<>(HandcraftingRecipe::new));
 
-    private static <S extends RecipeSerializer<T>, T extends Recipe<?>> S register(String name, S serializer) {
+    private static <S extends RecipeSerializer<T>, T extends ModRecipe<?>> S register(String name, S serializer) {
         return Registry.register(Registries.RECIPE_SERIALIZER, Identifier.of(Projectd7.MOD_ID, name), serializer);
     }
 

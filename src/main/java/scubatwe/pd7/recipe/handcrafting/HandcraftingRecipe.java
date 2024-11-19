@@ -12,6 +12,7 @@ import net.minecraft.recipe.book.RecipeBookCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
+import scubatwe.pd7.Projectd7;
 import scubatwe.pd7.recipe.ModRecipe;
 import scubatwe.pd7.recipe.ModRecipeBookCategory;
 import scubatwe.pd7.recipe.ModRecipeSerializer;
@@ -30,7 +31,7 @@ public class HandcraftingRecipe implements ModRecipe<HandcraftingRecipeInput> {
     private IngredientPlacement ingredientPlacement;
 
     public HandcraftingRecipe(String group, List<Ingredient> ingredients,
-                               List<ItemStack> byproducts, ItemStack result) {
+                              List<ItemStack> byproducts, ItemStack result) {
         this.group = group;
         this.ingredients = ingredients;
         this.byproducts = byproducts;
@@ -68,6 +69,7 @@ public class HandcraftingRecipe implements ModRecipe<HandcraftingRecipeInput> {
     }
 
     public List<ItemStack> byproduce(HandcraftingRecipeInput input, RegistryWrapper.WrapperLookup registries) {
+        Projectd7.LOGGER.info("Byproducts debug:  {}", this.byproducts);
         return new ArrayList<>(this.byproducts);
     }
 
